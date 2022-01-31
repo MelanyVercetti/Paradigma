@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'UniNeueBlack';
+    src: url('../assets/fonts/UniNeueBlack.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueBlack-Italic';
+    src: url('../assets/fonts/UniNeueBlack-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueBold';
+    src: url('../assets/fonts/UniNeueBold.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueBold-Italic';
+    src: url('../assets/fonts/UniNeueBold-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueBook';
+    src: url('../assets/fonts/UniNeueBook.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueBook-Italic';
+    src: url('../assets/fonts/UniNeueBook-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueHeavy';
+    src: url('../assets/fonts/UniNeueHeavy.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueHeavy-Italic';
+    src: url('../assets/fonts/UniNeueHeavy-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueLight';
+    src: url('../assets/fonts/UniNeueLight.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueLight-Italic';
+    src: url('../assets/fonts/UniNeueLight-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueRegular';
+    src: url('../assets/fonts/UniNeueRegular.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueRegular-Italic';
+    src: url('../assets/fonts/UniNeueRegular-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueThin';
+    src: url('../assets/fonts/UniNeueThin.ttf');
+}
+
+@font-face {
+    font-family: 'UniNeueThin-Italic';
+    src: url('../assets/fonts/UniNeueThin-Italic.ttf');
+}

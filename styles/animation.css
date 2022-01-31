@@ -1,0 +1,84 @@
+.animated-button {
+    border-radius: 5px;
+    border: none;
+    font-family: 'UniNeueBold';
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-info_consult {
+    width: 245px;
+    height: 70px;
+    background: #313d4b;
+}
+
+.calculate-button {
+    width: 22vw;
+    height: 5vw;
+    padding-left: 90px;
+    padding-right: 30px;
+    border-bottom: 5px solid #e83e3d;
+    background-image: url("/assets/imgs/calc-btn.png"), -webkit-gradient(linear, left bottom, left top, from(#fe5b55), to(#fe7d55));
+    background-image: url("/assets/imgs/calc-btn.png"), -o-linear-gradient(bottom, #fe5b55, #fe7d55);
+    background-image: url("/assets/imgs/calc-btn.png"), linear-gradient(to top, #fe5b55, #fe7d55);
+    background-repeat: no-repeat;
+    background-position: 10% 48%;
+    font-size: 16px;
+    text-transform: uppercase;
+    -moz-text-align-last: left;
+    text-align-last: left;
+}
+
+.main-info_consult::after,
+.calculate-button::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 300px;
+    margin-left: 50px;
+    background: #fff;
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), color-stop(50%, rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0.5)));
+    background: -o-linear-gradient( top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.5) 100%);
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.5) 100%);
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    -webkit-animation: move 3s ease-in-out 0.05s infinite;
+    animation: move 3s ease-in-out 0.05s infinite;
+}
+
+@-webkit-keyframes move {
+    0% {
+        left: -30px;
+        margin-left: 0px;
+    }
+    30% {
+        left: 110%;
+        margin-left: 80px;
+    }
+    100% {
+        left: 110%;
+        margin-left: 80px;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: -30px;
+        margin-left: 0px;
+    }
+    30% {
+        left: 110%;
+        margin-left: 80px;
+    }
+    100% {
+        left: 110%;
+        margin-left: 80px;
+    }
+}

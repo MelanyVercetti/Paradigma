@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    font-family: 'UniNeueBook';
+    font-size: 16px;
+    line-height: 1.3;
+    color: #282728;
+    max-width: 100vw;
+    background: #fff url("/assets/imgs/main-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+/* HEADER */
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.main-header {
+    margin-top: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header-logo {
+    cursor: pointer;
+}
+
+.header-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 2vw;
+    width: 80vw;
+}
+
+.header-info_adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: .3vw;
+    -moz-column-gap: .3vw;
+    column-gap: .3vw;
+    width: 13vw;
+}
+
+.main-info_consult:hover {
+    background: #fff;
+    color: #313d4b;
+    border: 1px solid #313d4b;
+}
+
+.phone {
+    background: url("/assets/imgs/phone.png") left no-repeat;
+    padding-left: 25px;
+    font-family: 'UniNeueHeavy';
+    color: #000;
+    text-decoration: none;
+}
+
+.socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.socials-btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 0;
+    border-radius: 50%;
+}
+
+.socials-btn:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.viber {
+    background: #7460f3;
+}
+
+.viber img {
+    display: block;
+    position: absolute;
+    top: 32%;
+    left: 32%;
+}
+
+.telegram {
+    background: #00a2f2;
+}
+
+.telegram img {
+    display: block;
+    position: absolute;
+    top: 34%;
+    left: 28%;
+}
+
+.whatsapp {
+    background: #25d266;
+}
+
+.whatsapp img {
+    display: block;
+    position: absolute;
+    top: 32%;
+    left: 28%;
+}
+
+.nav-button {
+    display: none;
+}
+
+.nav-button-item {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #313d4b;
+}
+
+
+/* NAV */
+
+.header-nav {
+    width: 80vw;
+    margin: 2vw 0;
+}
+
+.header-nav_list {
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header-nav_list-item {
+    text-transform: uppercase;
+    font-family: 'UniNeueBold';
+    cursor: pointer;
+}
+
+.header-nav_list-item:hover {
+    text-decoration: underline;
+}
+
+
+/* MODAL MAP */
+
+.modal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal-inner {
+    position: relative;
+    z-index: 10;
+}
+
+.pop-up {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+}
+
+.yandex-map {
+    position: fixed;
+    bottom: 40%;
+    left: 35%;
+    width: 500px;
+    /* height: 500px; */
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 43px;
+    height: 39px;
+    background: #7FAFF6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.main-info {
+    font-family: 'UniNeueHeavy';
+}
+
+
+/* MAIN */
+
+.main-information {
+    width: 43vw;
+}
+
+.main-information_header {
+    font-size: 55px;
+    margin: 4vw 0;
+}
+
+.main-information_header-main {
+    font-family: 'UniNeueBold';
+}
+
+.main-information_header-minor {
+    font-family: 'UniNeueLight';
+}
+
+.main-information_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.information {
+    position: relative;
+    width: 10vw;
+    padding-left: 1vw;
+}
+
+.info-01 {
+    padding-left: 4vw;
+    width: 14vw;
+}
+
+.info-dash {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    z-index: 1;
+    width: 20px;
+    height: 5px;
+    background: #fe5851;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.info-01 .info-dash {
+    position: absolute;
+    top: -5px;
+    left: -20px;
+}
+
+.info-year {
+    position: absolute;
+    top: -17px;
+    left: 0;
+    font-family: 'UniNeueHeavy';
+    font-size: 72px;
+}
+
+.main-price-and-license {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin: 5vw 0;
+}
+
+.main-price-calculate {
+    width: 22vw;
+    font-family: 'UniNeueRegular';
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.main-price-calculate p {
+    margin: 1vw;
+}
+
+.main-price-calculate_discount {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 3px;
+    font-family: 'UniNeueBold';
+}
+
+.main-license {
+    width: 20vw;
+}
+
+.main-license_header {
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.main-license_header {
+    font-family: 'UniNeueBold';
+}
+
+.main-license-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.left-arrow,
+.right-arrow {
+    cursor: pointer;
+}
+
+.license-img {
+    cursor: pointer;
+}
+
+.license-img.active {
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+    cursor: pointer;
+}
