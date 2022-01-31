@@ -83,6 +83,22 @@ p {
     border: 1px solid #313d4b;
 }
 
+.animated-button {
+    border-radius: 5px;
+    border: none;
+    font-family: 'UniNeueBold';
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-info_consult {
+    width: 245px;
+    height: 70px;
+    background: #313d4b;
+}
+
 .phone {
     background: url("assets/imgs/phone.png") left no-repeat;
     padding-left: 25px;
@@ -338,6 +354,45 @@ p {
     font-family: 'UniNeueBold';
 }
 
+.calculate-button {
+    width: 22vw;
+    height: 5vw;
+    padding-left: 90px;
+    padding-right: 30px;
+    border-bottom: 5px solid #e83e3d;
+    background-image: url("/assets/imgs/calc-btn.png"), -webkit-gradient(linear, left bottom, left top, from(#fe5b55), to(#fe7d55));
+    background-image: url("/assets/imgs/calc-btn.png"), -o-linear-gradient(bottom, #fe5b55, #fe7d55);
+    background-image: url("assets/imgs/calc-btn.png"), linear-gradient(to top, #fe5b55, #fe7d55);
+    background-repeat: no-repeat;
+    background-position: 10% 48%;
+    font-size: 16px;
+    text-transform: uppercase;
+    -moz-text-align-last: left;
+    text-align-last: left;
+}
+
+.main-info_consult::after,
+.calculate-button::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 300px;
+    margin-left: 50px;
+    background: #fff;
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), color-stop(50%, rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0.5)));
+    background: -o-linear-gradient( top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.5) 100%);
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.5) 100%);
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    -webkit-animation: move 3s ease-in-out 0.05s infinite;
+    animation: move 3s ease-in-out 0.05s infinite;
+}
+
 .main-license {
     width: 20vw;
 }
@@ -376,4 +431,208 @@ p {
     -ms-transform: scale(2);
     transform: scale(2);
     cursor: pointer;
+}
+
+@-webkit-keyframes move {
+    0% {
+        left: -30px;
+        margin-left: 0px;
+    }
+    30% {
+        left: 110%;
+        margin-left: 80px;
+    }
+    100% {
+        left: 110%;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .main-header {
+        row-gap: 2vw;
+    }
+    .header-info_adress {
+        width: 16vw;
+    }
+    .yandex-map {
+        left: 30%;
+    }
+    .info-year {
+        font-size: 55px;
+        top: -10px;
+    }
+    .main-price-and-license {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        row-gap: 5vw;
+    }
+    .main-price-calculate {
+        width: 40vw;
+    }
+    .calculate-button {
+        width: 30vw;
+        height: 7vw;
+    }
+    .main-license {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    body {
+        background-position: 50% 35%;
+        background-size: contain;
+    }
+    .header-info {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-column-gap: 10vw;
+        -moz-column-gap: 10vw;
+        column-gap: 10vw;
+        row-gap: 3vw;
+        width: 60vw;
+    }
+    .header-info_adress {
+        width: 18vw;
+    }
+    .header-nav {
+        width: 50vw;
+    }
+    .header-nav_list {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .header-nav_list-item {
+        width: 11vw;
+        margin: 1vw;
+    }
+    .main-information_header {
+        font-size: 45px;
+        text-align: center;
+        margin: 7vw 0;
+    }
+    .info-year {
+        font-size: 45px;
+        top: -6px;
+    }
+    .main-price-and-license {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        background-position: 0% 36%;
+    }
+    .container {
+        width: 90%;
+    }
+    .header-container {
+        position: relative;
+    }
+    .header-info {
+        -webkit-column-gap: 5vw;
+        -moz-column-gap: 5vw;
+        column-gap: 5vw;
+    }
+    .header-info_adress {
+        width: 25vw;
+    }
+    .yandex-map {
+        left: 22%;
+    }
+    .header-nav {
+        display: none;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 57px;
+        z-index: 2;
+    }
+    .header-nav.active {
+        display: block;
+    }
+    .header-nav_list {
+        display: block;
+        width: 330px;
+        padding: 1px 0;
+        background: rgb(218, 214, 214);
+    }
+    .header-nav_list-item {
+        width: 100%;
+        margin: 50px;
+    }
+    .nav-button {
+        display: block;
+        position: absolute;
+        top: 125px;
+        left: 8px;
+    }
+    .nav-button.active .item-01 {
+        position: absolute;
+        top: 8px;
+        left: -5px;
+        width: 36px;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+    .nav-button.active .item-04 {
+        position: absolute;
+        top: 8px;
+        left: -5px;
+        width: 36px;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .nav-button.active .item-02,
+    .nav-button.active .item-03 {
+        display: none;
+    }
+    .main-information_header {
+        font-size: 40px;
+        margin: 17vw 0;
+    }
+    .main-information_info {
+        width: 70vw;
+    }
+    .information {
+        width: 350px;
+        padding-left: 20px;
+        margin: 30px;
+    }
+    .info-01 {
+        padding-left: 55px;
+        width: 300px;
+    }
+    .calculate-button {
+        padding-left: 70px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-header {
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly
+    }
+    .header-logo img {
+        max-width: 100px;
+    }
+    .header-info {
+        width: 77%;
+    }
+    .main-price-calculate {
+        font-size: 16px;
+    }
+    .yandex-map {
+        left: 10%;
+    }
 }
