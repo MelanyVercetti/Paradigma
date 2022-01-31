@@ -5,7 +5,7 @@ body {
     line-height: 1.3;
     color: #282728;
     max-width: 100vw;
-    background: #fff url("./../assets/imgs/main-bg.jpg") center no-repeat;
+    background: #fff url("../assets/imgs/main-bg.jpg") center no-repeat;
     background-size: cover;
 }
 
