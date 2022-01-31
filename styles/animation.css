@@ -20,9 +20,9 @@
     padding-left: 90px;
     padding-right: 30px;
     border-bottom: 5px solid #e83e3d;
-    background-image: url("/assets/imgs/calc-btn.png"), -webkit-gradient(linear, left bottom, left top, from(#fe5b55), to(#fe7d55));
-    background-image: url("/assets/imgs/calc-btn.png"), -o-linear-gradient(bottom, #fe5b55, #fe7d55);
-    background-image: url("/assets/imgs/calc-btn.png"), linear-gradient(to top, #fe5b55, #fe7d55);
+    background-image: url("assets/imgs/calc-btn.png"), -webkit-gradient(linear, left bottom, left top, from(#fe5b55), to(#fe7d55));
+    background-image: url("assets/imgs/calc-btn.png"), -o-linear-gradient(bottom, #fe5b55, #fe7d55);
+    background-image: url("assets/imgs/calc-btn.png"), linear-gradient(to top, #fe5b55, #fe7d55);
     background-repeat: no-repeat;
     background-position: 10% 48%;
     font-size: 16px;
